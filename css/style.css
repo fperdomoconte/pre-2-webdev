@@ -20,10 +20,10 @@
     --main-background-color: #f1f4f1;
     --header-color-inverse: #2b2b2b;
     --header-font-family: "kanit-regular";
-    --header-font-color:#2b2b2b;
-    --header-font-size:1rem;
-    --header-font-color-inverse:#f1f4f1;
-        /* font-family: kanit-regular; Puesta aca la propiedad se aplica a :root como selector, en este caso es el html*/
+    --header-font-color: #2b2b2b;
+    --header-font-size: 1rem;
+    --header-font-color-inverse: #f1f4f1;
+    /* font-family: kanit-regular; Puesta aca la propiedad se aplica a :root como selector, en este caso es el html*/
 }
 
 /*Universal*/
@@ -89,7 +89,6 @@ header.header__navbar--inverse li a {
     padding: 0rem 1rem;
 }
 
-
 /* underlined logo */
 ul li a.logo {
     text-decoration: underline;
@@ -105,9 +104,23 @@ img.social-networks-thumb {
     height: 1rem;
     width: 1rem;
 }
-
 /*End of navigation menu - all pages*/
 
+/*Footer - all pages*/
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+footer h6 {
+    font-size: 1rem;
+    font-family: kanit-regular;
+    height: 5%;
+    padding: 0.8rem 0rem;
+}
+/*End Footer - all pages*/
+
+/*START - HOMEPAGE*/
 /*Start - Main content - homepage*/
 .herobox__container {
     background-image: url(../assets/images/beach-image.jpg);
@@ -132,29 +145,13 @@ img.social-networks-thumb {
     font-size: 2rem;
     font-family: kanit-regular;
 }
+/*END - HOMEPAGE*/
 
-/**Footer - all pages**/
-
-.footer__container {
-    display: flex;
-    justify-content: center;
-}
-
-footer h6 {
-    font-size: 1rem;
-    font-family: kanit-regular;
-    height: 5%;
-    padding: 0.8rem 0rem;
-}
-
-/**END - HOMEPAGE**/
-
-/**START - SERVICES**/
-
-/*Grid*/
+/*START - /SERVICES*/
+/*Services - grid*/
 .grid__container-services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 3fr;
     border: 4px solid black;
     margin: 5% 10%;
@@ -175,14 +172,15 @@ footer h6 {
 }
 
 .grid__description {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .main__services {
-    /*     background-color: #f1f4f1;
-    border-radius: 2rem 2rem 0rem 0rem; */
-    height: 60rem;
+    height: 50rem;
     display: flex;
 }
 
@@ -193,26 +191,23 @@ footer h6 {
     font-size: 2rem;
     font-family: kanit-regular;
     color: #000000;
-    padding-left: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-left: 5rem;
+    padding-top: 2rem;
 }
 
 .grid__description p {
-    width: 90%;
+    width: 70%;
     text-align: justify;
     font-family: kanit-light;
     color: black;
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 12rem;
 }
 
 .grid__list ul {
     list-style-type: none;
     text-decoration: none;
     padding-left: 5rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     line-height: 3rem;
 }
 
@@ -225,9 +220,10 @@ footer h6 {
 .grid__list li :hover {
     color: #1F4E95;
 }
+/*END - /SERVICES*/
 
 
-/**START - WORKS**/
+/**START - /WORKS**/
 /**Work - list**/
 .grid__container-works img.grid__thumbnail {
     object-fit: cover;
@@ -250,8 +246,10 @@ footer h6 {
     border-color: black;
     margin: 0;
 }
+/*END - /WORKS*/
 
-/**About - section**/
+/*START - /ABOUT*/
+/*About - section*/
 .grid__container-about img.grid__thumbnail {
     object-fit: cover;
     height: 20rem;
@@ -288,9 +286,10 @@ footer h6 {
     font-size: 0.8rem;
     margin: 0;
 }
+/*END - /ABOUT*/
 
+/*START /CONTACT*/
 /**Contact - section**/
-
 .contact-box__container {
     font-family: kanit-light;
     font-size: 0.8rem;
@@ -323,4 +322,32 @@ footer h6 {
 .contact-box__container iframe {
     height: 20rem;
     width: 20rem;
+}
+/*END /CONTACT*/
+
+/*MEDIA QUERIES*/
+
+/* Mobile */
+
+/* Tablet */
+@media screen and (max-width:1024px) {
+    .grid__desktop {
+        display: none;
+    }
+
+    .grid__title h4 {
+        padding-top: 0rem;
+    }
+
+    .grid__description p {
+        width: 80%;
+        padding-top: 2rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:1025px) {
+    .grid__tablet {
+        display: none;
+    }
 }
