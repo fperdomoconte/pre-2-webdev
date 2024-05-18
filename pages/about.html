@@ -17,41 +17,45 @@
 
 <body>
 
-    <header>
+    <header class="header__navbar--inverse">
         <!--Navigation menu-->
         <nav>
-            <ul class="nav-menu">
-                <li><a class="logo" href="../index.html">JPSC</a></li>
-                <li><a href="../pages/services.html">Services</a></li>
-                <li><a href="../pages/work.html">Work</a></li>
-                <li><a class="current" href="./about.html">About</a></li>
-                <li><a href="../pages/contactus.html">Contact</a></li>
-            </ul>
-            <a href="https://twitter.com"><img
-                src="https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.png"
-                alt="x-logo" class="social-networks-thumb"></a>
+            <div class="navbar__container">
+                <ul class="navbar__list">
+                    <li><a class="logo" href="../index.html">JPSC</a></li>
+                    <li><a href="../pages/services.html">Services</a></li>
+                    <li><a href="../pages/work.html">Work</a></li>
+                    <li><a class="current" href="./about.html">About</a></li>
+                    <li><a href="../pages/contactus.html">Contact</a></li>
+                </ul>
+                <div class="navbar__socials">
+                    <a href="https://twitter.com"><img
+                            src="https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.png"
+                            alt="x-logo" class="social-networks-thumb"></a>
 
-        <a href="https://www.instagram.com/"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/tBxa1IFcTQH.png"
-                alt="instagram-logo" class="social-networks-thumb"></a>
+                    <a href="https://www.instagram.com/"><img
+                            src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png"
+                            alt="instagram-logo" class="social-networks-thumb"></a>
 
-        <a href="https://www.linkedin.com/"><img
-                src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
-                alt="linkedin" class="social-networks-thumb"></a>
+                    <a href="https://www.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png"
+                            alt="linkedin" class="social-networks-thumb"></a>
+                </div>
+            </div>
         </nav>
-
     </header>
 
+    <!-- About grid -->
     <main>
-
         <section>
-            <table class="about-section">
+            <table class="grid__container-about">
                 <tr>
                     <td>
-                        <ul class="service-list">
+                        <ul>
                             <h4>About us</h4>
-                            <li><img src="../assets/images/team-image.jpg" alt="" class="thumbnail"></li>
+                            <li><img src="../assets/images/team-image.jpg" alt="" class="grid__thumbnail"></li>
                         </ul>
                     </td>
+                    <!--About description-->
                     <td>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis, dolore doloribus
                             distinctio velit illum necessitatibus numquam saepe impedit beatae nostrum, reiciendis
@@ -86,7 +90,9 @@
 
     <!--Footer-->
     <footer>
-        <h6>Copyright 2024 | Florencia Perdomo</h6>
+        <div class="footer__container">
+            <h6>Copyright 2024 | Florencia Perdomo</h6>
+        </div>
     </footer>
 </body>
 

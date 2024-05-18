@@ -38,29 +38,29 @@ header {
     height: 5%;
 }
 
-header.header-inverse {
+header.header__navbar--inverse {
     border-radius: 0rem 0rem 2rem 2rem;
     background-color: var(--header-color-inverse)
 }
 
-.menu-container {
+.navbar__container {
     display: flex;
     padding: 0.5rem 0.5rem;
     align-items: center;
 }
 
 /* ul flex + item positioning */
-.menu-list {
+.navbar__list {
     list-style-type: none;
     display: flex;
 }
 
-.menu-list li {
+.navbar__list li {
     padding: 0rem 2rem;
 }
 
 /* menu href style */
-.menu-list li a {
+.navbar__list li a {
     /* Remove underline */
     text-decoration: none;
     /* Format text */
@@ -69,23 +69,23 @@ header.header-inverse {
     font-family: var(--header-font-family)
 }
 
-header.header-inverse li a {
+header.header__navbar--inverse li a {
     /* Format text */
     color: var(--header-font-color-inverse);
     font-family: var(--header-font-family)
 }
 
-.menu-list li :hover {
+.navbar__list li :hover {
     color: #1F4E95;
 }
 
-.menu-socials {
+.navbar__socials {
     display: flex;
     flex: 1;
     justify-content: end;
 }
 
-.menu-socials a {
+.navbar__socials a {
     padding: 0rem 1rem;
 }
 
@@ -109,7 +109,7 @@ img.social-networks-thumb {
 /*End of navigation menu - all pages*/
 
 /*Start - Main content - homepage*/
-.main-container {
+.herobox__container {
     background-image: url(../assets/images/beach-image.jpg);
     background-size: cover;
     border-radius: 2rem 2rem 0rem 0rem;
@@ -117,25 +117,25 @@ img.social-networks-thumb {
     display: flex;
 }
 
-.main {
+.herobox__section {
     padding-left: 5rem;
     padding-top: 15rem;
 }
 
 /*Main fonts - homepage*/
-.main h1 {
+.herobox__section h1 {
     font-size: 8rem;
     font-family: kanit-regular;
 }
 
-.main h3 {
+.herobox__section h3 {
     font-size: 2rem;
     font-family: kanit-regular;
 }
 
 /**Footer - all pages**/
 
-.footer-container {
+.footer__container {
     display: flex;
     justify-content: center;
 }
@@ -152,7 +152,7 @@ footer h6 {
 /**START - SERVICES**/
 
 /*Grid*/
-.services-grid-container {
+.grid__container-services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -161,11 +161,11 @@ footer h6 {
     background-color: rgba(225, 225, 225, 0.5);
 }
 
-.grid-item {
+.grid__item {
     border: 1px solid black;
 }
 
-.item-title {
+.grid__title {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -174,12 +174,12 @@ footer h6 {
     justify-content: center;
 }
 
-.item-description {
+.grid__description {
     grid-column: 2/4;
     grid-row: 1/3;
 }
 
-.services-main {
+.main__services {
     /*     background-color: #f1f4f1;
     border-radius: 2rem 2rem 0rem 0rem; */
     height: 60rem;
@@ -189,7 +189,7 @@ footer h6 {
 /*End - Grid*/
 
 /*Typography*/
-.item-title h4 {
+.grid__title h4 {
     font-size: 2rem;
     font-family: kanit-regular;
     color: #000000;
@@ -198,7 +198,7 @@ footer h6 {
     padding-bottom: 5%;
 }
 
-.item-description p {
+.grid__description p {
     width: 90%;
     text-align: justify;
     font-family: kanit-light;
@@ -208,7 +208,7 @@ footer h6 {
     padding-bottom: 5%;
 }
 
-.item-list ul {
+.grid__list ul {
     list-style-type: none;
     text-decoration: none;
     padding-left: 5rem;
@@ -216,20 +216,20 @@ footer h6 {
     line-height: 3rem;
 }
 
-.item-list ul li a {
+.grid__list ul li a {
     text-decoration: none;
     font-family: kanit-regular;
     color: black;
 }
 
-.item-list li :hover {
+.grid__list li :hover {
     color: #1F4E95;
 }
 
 
 /**START - WORKS**/
 /**Work - list**/
-.work-list img.thumbnail {
+.grid__container-works img.grid__thumbnail {
     object-fit: cover;
     height: 20rem;
     width: 20rem;
@@ -238,7 +238,7 @@ footer h6 {
     border-color: black;
 }
 
-.work-list p {
+.grid__container-works p {
     height: 3rem;
     width: 20rem;
     text-align: justify;
@@ -252,7 +252,7 @@ footer h6 {
 }
 
 /**About - section**/
-.about-section img.thumbnail {
+.grid__container-about img.grid__thumbnail {
     object-fit: cover;
     height: 20rem;
     width: 20rem;
@@ -261,7 +261,7 @@ footer h6 {
     border-color: black;
 }
 
-.about-section p {
+.grid__container-about p {
     max-height: 30rem;
     max-width: 40rem;
     text-align: justify;
@@ -271,18 +271,18 @@ footer h6 {
     margin: 0;
 }
 
-.about-section h4 {
+.grid__container-about h4 {
     font-family: kanit-light;
     font-size: 1rem;
     color: #1F4E95;
     margin: 0;
 }
 
-.about-section {
+.grid__container-about {
     background-color: rgba(225, 225, 225, 0.5);
 }
 
-.about-section ul {
+.grid__container-about ul {
     color: black;
     font-family: kanit-light;
     font-size: 0.8rem;
@@ -291,7 +291,7 @@ footer h6 {
 
 /**Contact - section**/
 
-.contact-box {
+.contact-box__container {
     font-family: kanit-light;
     font-size: 0.8rem;
     color: black;
@@ -299,28 +299,28 @@ footer h6 {
     margin: 0;
 }
 
-.contact-box h4 {
+.contact-box__container h4 {
     font-family: kanit-regular;
     font-size: 1rem;
     color: #1F4E95;
 }
 
-.contact-box input {
+.contact-box__container input {
     font-family: kanit-light;
     font-size: 0.8rem;
     margin-bottom: 2rem;
 }
 
-.contact-box ul {
+.contact-box__container ul {
     list-style-type: none;
 }
 
-.contact-box ul li {
+.contact-box__container ul li {
     text-decoration: none;
     font-family: kanit-regular;
 }
 
-.contact-box iframe {
+.contact-box__container iframe {
     height: 20rem;
     width: 20rem;
 }
