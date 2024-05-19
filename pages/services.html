@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
 
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
     <!--Favicon-->
     <link rel="icon" type="image/png" href="../assets/favicon/apple-touch-icon.png">
 
@@ -24,10 +29,10 @@
                 <!--Relative links-->
                 <ul class="navbar__list">
                     <li><a class="logo" href="../index.html">JPSC</a></li>
-                    <li><a class="current" href="./pages/services.html">Services</a></li>
-                    <li><a href="../pages/work.html">Work</a></li>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../pages/contactus.html">Contact</a></li>
+                    <li><a class="current" href="#">Services</a></li>
+                    <li><a href="./work.html">Work</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
                 </ul>
                 <div class="navbar__socials">
                     <!--Absolute links-->
@@ -44,17 +49,15 @@
         </nav>
     </header>
 
-
     <main class="main__services">
-
-        <!-- Services desktop grid - start -->
+        <!-- Services desktop tablet grid - start -->
         <section class="grid__container-services grid__desktop">
             <div class="grid__item grid__title">
                 <h4>Our services</h4>
             </div>
             <!--Services description-->
             <div class="grid__item grid__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis, dolore doloribus
+                <p>Our services <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis, dolore doloribus
                     distinctio velit illum necessitatibus numquam saepe impedit beatae nostrum, reiciendis
                     itaque. Voluptate fugit laboriosam consequuntur modi nostrum, in facere. Culpa quos esse
                     neque ratione quo, maxime quod asperiores id nemo saepe quas nostrum nam nesciunt rem
@@ -73,34 +76,74 @@
                 </ul>
             </div>
         </section>
-        <!-- Services desktop grid - end -->
+        <!-- Services desktop tablet grid - end -->
 
-        <!-- Services tablet grid - start -->
-        <section class="grid__container-services grid__tablet">
+        <!-- Services mobile grid - start -->
+        <section class="grid__container-services grid__mobile">
+
             <div class="grid__item grid__title">
-
-            </div>
-            <!--Services description-->
-            <div class="grid__item grid__title grid__description">
                 <h4>Our services</h4>
-                <p>Tablet<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, asperiores ipsam.
-                    Consectetur impedit repudiandae sunt consequuntur ut dolores quia quis ducimus laudantium, sequi
-                    amet, quae, quibusdam quasi expedita modi sit?
-                </p>
             </div>
-            <!--  Service title -->
-            <div class="grid__item grid__list">
-                <ul>
-                    <li><a href="../pages/services/services-eia.html">Environmental impact assessment</a></li>
-                    <li><a href="">Environmental data science</a></li>
-                    <li><a href="">Environmental engineering</a></li>
-                    <li><a href="">Air quality modeling</a></li>
-                    <li><a href="">Hydrodynamic modeling</a></li>
-                    <li><a href="">Remote sensing</a></li>
-                </ul>
+
+            <div class=" grid__item card-1 card" style="width: 18rem;">
+                <img src="../assets/images/dragado-nocturno-image.jpg" class="card-img-top"
+                    alt="Environmental impact assessment">
+                <div class="card-body">
+                    <a href="../pages/services/services-eia.html">Environmental impact assessment</a>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente!
+                    </p>
+                </div>
             </div>
+
+            <div class=" grid__item card-2 card" style="width: 18rem;">
+                <img src="../assets/images/dragado-nocturno-image.jpg" class="card-img-top"
+                    alt="Environmental data science">
+                <div class="card-body">
+                    <a href="../pages/services/services-eia.html">Environmental data science</a>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente!
+                    </p>
+                </div>
+            </div>
+
+            <div class=" grid__item card-3 card" style="width: 18rem;">
+                <img src="../assets/images/dragado-nocturno-image.jpg" class="card-img-top"
+                    alt="Environmental engineering">
+                <div class="card-body">
+                    <a href="../pages/services/services-eia.html">Environmental engineering</a>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente!
+                    </p>
+                </div>
+            </div>
+
+            <div class=" grid__item card-4 card" style="width: 18rem;">
+                <img src="../assets/images/dragado-nocturno-image.jpg" class="card-img-top" alt="Air quality modeling">
+                <div class="card-body">
+                    <a href="../pages/services/services-eia.html">Air quality modeling</a>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente!
+                    </p>
+                </div>
+            </div>
+
+            <div class=" grid__item card-5 card" style="width: 18rem;">
+                <img src="../assets/images/dragado-nocturno-image.jpg" class="card-img-top" alt="Hydrodynamic modeling">
+                <div class="card-body">
+                    <a href="../pages/services/services-eia.html">Hydrodynamic modeling</a>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente!
+                    </p>
+                </div>
+            </div>
+
+            <div class=" grid__item card-6 card" style="width: 18rem;">
+                <img src="../assets/images/dragado-nocturno-image.jpg" class="card-img-top" alt="Remote sensing">
+                <div class="card-body">
+                    <a href="../pages/services/services-eia.html">Remote sensing</a>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sapiente!
+                    </p>
+                </div>
+            </div>
+
         </section>
-        <!-- Services tablet grid - end -->
+        <!-- Services mobile grid - end -->
 
     </main>
 
@@ -110,6 +153,12 @@
             <h6>Copyright 2024 | Florencia Perdomo</h6>
         </div>
     </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
