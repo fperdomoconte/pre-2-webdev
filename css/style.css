@@ -155,12 +155,8 @@ footer h6 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 3fr;
-    border: 4px solid black;
     margin: 5% 10%;
     background-color: var(--main-background-color);
-}
-
-.grid__item {
     border: 1px solid black;
 }
 
@@ -171,6 +167,8 @@ footer h6 {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    border-bottom: 1px solid black;
+    
 }
 
 .grid__description {
@@ -178,13 +176,17 @@ footer h6 {
     grid-row: 2/3;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    border-left: 1px solid lightgrey;
 }
 
 .main__services {
-    height: 60rem;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50rem;
 }
+
+
 
 /*End - Grid*/
 
@@ -195,11 +197,20 @@ footer h6 {
     color: #000000;
     padding-left: 5rem;
     padding-top: 2rem;
+    text-decoration: underline;
+}
+
+.grid__title h3 {
+    font-size: 1rem;
+    font-family: kanit-light;
+    color: var(--header-font-color);
+    padding-left: 5rem;
+    padding-top: 0.3rem;
 }
 
 .grid__title a {
     text-decoration: none;
-}
+    }
 
 .grid__title a h4 {
     font-weight: 500;
@@ -214,7 +225,7 @@ footer h6 {
 }
 
 .grid__list ul {
-    list-style-type: none;
+    /*    list-style-type: none; */
     text-decoration: none;
     padding-left: 5rem;
     padding-top: 2rem;
@@ -366,34 +377,34 @@ footer h6 {
         height: auto;
     }
 
-    
-.grid__title {
-    grid-area: grid__title;
-}
 
-.card-1 {
-    grid-area: card-1;
-}
+    .grid__title {
+        grid-area: grid__title;
+    }
 
-.card-2 {
-    grid-area: card-2;
-}
+    .card-1 {
+        grid-area: card-1;
+    }
 
-.card-3 {
-    grid-area: card-3;
-}
+    .card-2 {
+        grid-area: card-2;
+    }
 
-.card-4 {
-    grid-area: card-4;
-}
+    .card-3 {
+        grid-area: card-3;
+    }
 
-.card-5 {
-    grid-area: card-5;
-}
+    .card-4 {
+        grid-area: card-4;
+    }
 
-.card-6 {
-    grid-area: card-6;
-}
+    .card-5 {
+        grid-area: card-5;
+    }
+
+    .card-6 {
+        grid-area: card-6;
+    }
 
     .grid__container-services {
         border: 0px solid black;
@@ -408,30 +419,32 @@ footer h6 {
             "card-5"
             "card-6";
         height: auto;
-        }
+        width: 90vw;
+        margin: 0 auto;
+    }
 
-        .grid__item {
-            border: 0px solid black;
-        }
+    .grid__item {
+        border: 0px solid black;
+    }
 
-        .card{
-            display: flex;
-            justify-self: center;
-            background-color: var(--main-background-color);
-            border: 0.5px solid gray;
-            margin: 1rem;
-            font-family: kanit-light;
-        }
+    .card {
+        display: flex;
+        justify-self: center;
+        background-color: var(--main-background-color);
+        border: 0.5px solid gray;
+        margin: 1rem;
+        font-family: kanit-light;
+    }
 
-        .card div a{
-            font-weight: bold;
-            text-decoration: none;
-            color: black;
-        }
+    .card div a {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
 
-        .card img{
-       height: 10rem;
-        }
+    .card img {
+        height: 10rem;
+    }
 
 
 }
