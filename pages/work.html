@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
 
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!--Favicon-->
     <link rel="icon" type="image/png" href="../assets/favicon/apple-touch-icon.png">
 
@@ -47,86 +51,102 @@
 
     </header>
 
-    <!--Work hrefs grid-->
-    <main>
+
+    <main class="main__works">
+        <!--Work hrefs grid-->
         <section class="grid__container-works">
-            <table>
-                <tr>
-                    <td>
-                        <a href=""><img src="../assets/images/dragado-nocturno-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
+            <!--Works title-->
+            <div class="title--works">
+                <h4>Works & clients</h4>
+                <h3>Our latest consulting projects.</h3>
+            </div>
+            <!-- Works cards bs -->
+            <div class="grid__item works-1">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/dragado-nocturno-image.jpg" class="grid__thumbnail card-img-top"
+                        alt="works-1">
+                    <div class="card-body">
+                        <a href="#">Lorem ipsum, dolor sit amet consectetur</a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                            sapiente!
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                    <td>
-                        <a href=""><img src="../assets/images/industria-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href=""><img src="../assets/images/carretera-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
-                    <td>
-                        <a href=""><img src="../assets/images/drone-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href=""><img src="../assets/images/dragado-nocturno-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
+            <div class="grid__item works-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/industria-image.jpg" class="grid__thumbnail card-img-top" alt="works-2">
+                    <div class="card-body">
+                        <a href="#">Lorem ipsum, dolor sit</a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                            sapiente!
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                    <td>
-                        <a href=""><img src="../assets/images/industria-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href=""><img src="../assets/images/carretera-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
-                    <td>
-                        <a href=""><img src="../assets/images/drone-image.jpg" alt="image alt text"
-                                class="grid__thumbnail"></a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus cum saepe culpa
-                            voluptatum,
-                            veniam amet maiores voluptatibus ducimus modi natus!</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="grid__item works-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/carretera-image.jpg" class="grid__thumbnail card-img-top" alt="works-3">
+                    <div class="card-body">
+                        <a href="#">Lorem ipsum, dolor sit amet</a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                            sapiente!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item works-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/drone-image.jpg" class="grid__thumbnail card-img-top" alt="works-4">
+                    <div class="card-body">
+                        <a href="#">Lorem ipsum, dolor</a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                            sapiente!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item works-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/drone-image.jpg" class="grid__thumbnail card-img-top" alt="works-5">
+                    <div class="card-body">
+                        <a href="#">Lorem ipsum, dolor sit</a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                            sapiente!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item works-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/images/drone-image.jpg" class="grid__thumbnail card-img-top" alt="works-6">
+                    <div class="card-body">
+                        <a href="#">Lorem ipsum</a>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                            sapiente!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!--Footer-->
-    <footer>
-        <div class="footer__container">
-            <h6>Copyright 2024 | Florencia Perdomo</h6>
-        </div>
-    </footer>
+<!--Footer-->
+<footer>
+    <div class="footer__container">
+        <h6>© 2024. Todos los derechos reservados | Diseño y desarrollo: Florencia Perdomo</h6>
+    </div>
+</footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 

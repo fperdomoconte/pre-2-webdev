@@ -168,7 +168,7 @@ footer h6 {
     flex-direction: column;
     justify-content: center;
     border-bottom: 1px solid black;
-    
+
 }
 
 .grid__description {
@@ -185,8 +185,6 @@ footer h6 {
     width: 100%;
     height: 50rem;
 }
-
-
 
 /*End - Grid*/
 
@@ -210,7 +208,7 @@ footer h6 {
 
 .grid__title a {
     text-decoration: none;
-    }
+}
 
 .grid__title a h4 {
     font-weight: 500;
@@ -245,29 +243,114 @@ footer h6 {
 /*END - /SERVICES*/
 
 
-/**START - /WORKS**/
-/**Work - list**/
-.grid__container-works img.grid__thumbnail {
-    object-fit: cover;
-    height: 20rem;
-    width: 20rem;
-    border: 1px solid;
-    border-radius: 1px;
-    border-color: black;
+/*START - /WORKS*/
+/*Work - grid*/
+.grid__container-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:
+        "title--works title--works title--works"
+        "works-1 works-2 works-3"
+        "works-4 works-5 works-6";
+    margin: 5% 10%;
+    background-color: var(--main-background-color);
+    border: 1px solid black;
+    width: 100%;
+
+  /*   row-gap: 2rem; */
+    column-gap: 5rem;
+    padding-bottom: 2rem;
 }
 
-.grid__container-works p {
-    height: 3rem;
-    width: 20rem;
-    text-align: justify;
-    font-family: kanit-light;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    border: 1px solid;
-    border-radius: 1px;
-    border-color: black;
-    margin: 0;
+.title--works {
+    grid-area: title--works;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
 }
+
+.main__works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.works-1 {
+    grid-area: works-1;
+}
+
+.works-2 {
+    grid-area: works-2;
+}
+
+.works-3 {
+    grid-area: works-3;
+}
+
+.works-4 {
+    grid-area: works-4;
+}
+
+.works-5 {
+    grid-area: works-5;
+}
+
+.works-6 {
+    grid-area: works-6;
+}
+
+.grid__container-works div.grid__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid__item div img.grid__thumbnail {
+    height: 18rem;
+    object-fit: cover;
+}
+
+/*End - Grid*/
+
+/*Typography*/
+.title--works h4 {
+    font-size: 1.5rem;
+    font-family: kanit-regular;
+    color: #000000;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    text-decoration: underline;
+}
+
+.title--works h3 {
+    font-size: 1rem;
+    font-family: kanit-light;
+    color: var(--header-font-color);
+    padding-left: 5rem;
+    padding-top: 0.3rem;
+}
+
+.grid__container-works .grid__item div.card-body a {
+    font-weight: bold;
+    font-family: kanit-light;
+    text-decoration: none;
+    color: black;
+}
+
+.grid__container-works .grid__item div.card {
+    display: flex;
+    justify-self: center;
+    border: 0.5px solid gray;
+    margin: 1rem;
+    font-family: kanit-light;
+}
+
 
 /*END - /WORKS*/
 
@@ -365,6 +448,26 @@ footer h6 {
     .grid__mobile {
         display: none;
     }
+
+    .grid__container-works {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title--works title--works"
+            "works-1 works-2"
+            "works-3 works-4"
+            "works-5 works-6";
+        width: 95vw;
+     /*    border: 0px solid black; */
+        row-gap: 0;
+        column-gap: 0;
+        padding: 0;
+    }
+
+  /*   .title--works {
+        border: 0px solid black;
+    } */
+
 }
 
 /* Mobile */
@@ -407,7 +510,7 @@ footer h6 {
     }
 
     .grid__container-services {
-        border: 0px solid black;
+    /*     border: 0px solid black; */
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -420,7 +523,7 @@ footer h6 {
             "card-6";
         height: auto;
         width: 90vw;
-        margin: 0 auto;
+      /*   margin: 0 auto; */
     }
 
     .grid__item {
@@ -430,7 +533,8 @@ footer h6 {
     .card {
         display: flex;
         justify-self: center;
-        background-color: var(--main-background-color);
+        /* background-color: var(--main-background-color);
+            */
         border: 0.5px solid gray;
         margin: 1rem;
         font-family: kanit-light;
@@ -446,5 +550,26 @@ footer h6 {
         height: 10rem;
     }
 
+    .grid__container-works {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title--works"
+            "works-1"
+            "works-2"
+            "works-3"
+            "works-4"
+            "works-5"
+            "works-6";
+        width: 90vw;
+       /*  border: 0px solid black; */
+        row-gap: 0;
+        column-gap: 0;
+        padding: 0;
+    }
+
+    .title--works {
+        border: 0px solid black;
+    }
 
 }
