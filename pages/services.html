@@ -21,28 +21,44 @@
 
 <body>
 
-    <header class="header__navbar--inverse">
-        <!--Navbar-->
-        <nav>
-            <div class="navbar__container">
-                <!--Relative links-->
-                <ul class="navbar__list">
-                    <li><a class="logo" href="../index.html">JPSC</a></li>
-                    <li><a class="current" href="#">Services</a></li>
-                    <li><a href="./work.html">Work</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contactus.html">Contact</a></li>
-                </ul>
-                <div class="navbar__socials">
-                    <!--Absolute links-->
-                    <a href="https://twitter.com"><img
-                            src="https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.png"
-                            alt="x-logo" class="social-networks-thumb"></a>
-                    <a href="https://www.instagram.com/"><img
-                            src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png"
-                            alt="instagram-logo" class="social-networks-thumb"></a>
-                    <a href="https://www.linkedin.com/"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png"
-                            alt="linkedin" class="social-networks-thumb"></a>
+    <header>
+        <!--Navigation menu-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html">JPSC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__list">
+                        <li class="nav-item">
+                            <a class="nav-link current" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work.html">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a> <!-- Se entrego en PRE-1, no se entrega en esta etapa -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a> <!-- Se entrego en PRE-1, no se entrega en esta etapa -->
+                        </li>
+                    </ul>
+                    <span>
+                        <div class="navbar__socials">
+                            <!-- poner un MQ para que no se vean los links social en menu colapsado -->
+                            <a href="https://twitter.com"><img
+                                    src="https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.png"
+                                    alt="x-logo" class="social-networks-thumb"></a>
+                            <a href="https://www.instagram.com/"><img
+                                    src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png"
+                                    alt="instagram-logo" class="social-networks-thumb"></a>
+                            <a href="https://www.linkedin.com/"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin"
+                                    class="social-networks-thumb"></a>
+                        </div>
+                    </span>
                 </div>
             </div>
         </nav>
